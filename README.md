@@ -1,8 +1,8 @@
 # Brain Tumor Classification System (BTCS)
 
-## 🧠 AI System Design Course Project
+## 🧠 Deep Learning Course Project
 
-An intelligent web-based diagnostic tool that leverages deep learning to classify brain tumors from MRI scans. The system runs entirely in the browser using ONNX Runtime, ensuring privacy and accessibility.
+An intelligent web-based diagnostic tool that leverages deep learning to classify brain tumors from MRI scans. The system runs entirely in the browser, ensuring privacy and accessibility.
 
 ## ✨ Features
 
@@ -49,7 +49,7 @@ npm install
 ## 🏗️ Technology Stack
 
 - **Frontend**: React 19, JavaScript, TailwindCSS
-- **AI/ML**: ONNX Runtime Web, CNN Model
+- **AI/ML**: ONNX Runtime Web, VGG Model
 - **Build Tool**: Vite 7
 - **Icons**: Lucide React
 - **Styling**: PostCSS, Autoprefixer
@@ -65,7 +65,7 @@ btcs-app/
 │   ├── index.css            # Global styles
 │   └── assets/              # Images and assets
 ├── public/
-│   ├── model.onnx           # Pre-trained CNN model
+│   ├── model.onnx           # Vgg model
 │   └── ort-wasm-*.wasm      # ONNX Runtime WASM files
 ├── index.html               # HTML template
 ├── vite.config.js           # Vite configuration
@@ -78,9 +78,7 @@ btcs-app/
 - **Architecture**: Convolutional Neural Network (CNN)
 - **Input**: 224x224 RGB images
 - **Output**: 4 class probabilities (Glioma, Meningioma, Pituitary, No Tumor)
-- **Accuracy**: ~79%
-- **Model Size**: ~1.45 MB
-- **Inference Time**: ~9ms
+- **Accuracy**: ~91%
 
 ## ⚖️ Disclaimer
 
